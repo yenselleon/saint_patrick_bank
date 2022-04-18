@@ -1,5 +1,7 @@
 import { Box, Flex, HStack, Text } from '@chakra-ui/react';
-import React from 'react'
+import React from 'react';
+import { GrHome } from "react-icons/gr";
+
 
 const Dashboard = () => {
   return (
@@ -12,6 +14,7 @@ const Dashboard = () => {
         display={"flex"}
         justifyContent="center"
         alignItems={"center"}
+        flexDirection="column"
       >
         {/* header left menu */}
         <HStack spacing={"3"}>
@@ -31,6 +34,14 @@ const Dashboard = () => {
               Saint Patrick
             </Text>
           </Box>
+        </HStack>
+
+        {/* menu lef panel */}
+        <HStack>
+          <Box>
+            <GrHome/>
+          </Box>
+          <Box></Box>
         </HStack>
       </Box>
 
